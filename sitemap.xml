@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.asborion.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.asborion.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.asborion.com/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/services.html"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.asborion.com/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/services.html"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.asborion.com/realisations.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/realisations.html"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.asborion.com/en/realisations.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/realisations.html"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.asborion.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/contact.html"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.asborion.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.asborion.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.asborion.com/en/contact.html"/>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+</urlset>

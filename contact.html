@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; devis gratuit — ASBORION</title>
+  <meta name="description" content="Parlez de votre projet web à ASBORION et recevez un devis gratuit sous 48h.">
+  <meta name="author" content="ASBORION">
+  <meta property="og:title" content="Contact &amp; devis gratuit — ASBORION">
+  <meta property="og:description" content="Parlez de votre projet web à ASBORION et recevez un devis gratuit sous 48h.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.asborion.com/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="canonical" href="https://www.asborion.com/contact.html">
+  <link rel="alternate" hreflang="fr" href="https://www.asborion.com/contact.html">
+  <link rel="alternate" hreflang="en" href="https://www.asborion.com/en/contact.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.asborion.com/contact.html">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo" aria-label="ASBORION, accueil">
+  <svg class="logo__star" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 3.84 L52.37 43.63 L75.38 48 L52.37 52.37 L48 92.16 L43.63 52.37 L20.62 48 L43.63 43.63 Z"/></svg><span class="logo__text">ASBORION</span>
+</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="lang-switch" href="en/contact.html" hreflang="en" lang="en" aria-label="English version"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro fade-up" style="padding-bottom:3rem">
+      <p class="eyebrow">Contact</p>
+      <h1 class="headline h-xl">Parlons de votre projet.</h1>
+      <p class="lead">Réponse sous 48h, avec une première estimation. Gratuit et sans engagement.</p>
+    </section>
+
+    <section class="tiles-wrap" style="padding-bottom:6rem">
+      <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="tile form container--sm" style="margin:0 auto" novalidate>
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="langue" value="fr">
+        <p class="hp-field" aria-hidden="true"><label>Ne pas remplir : <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="form__row">
+          <div class="field">
+            <label for="name">Nom</label>
+            <input id="name" name="name" class="input" required maxlength="100" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" class="input" required maxlength="255" autocomplete="email">
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Type de projet</legend>
+          <input type="hidden" id="project-type" name="projectType" value="Site vitrine">
+          <div class="chips">
+            <button type="button" class="chip" data-value="Site vitrine" aria-pressed="true">Site vitrine</button>
+            <button type="button" class="chip" data-value="E-commerce" aria-pressed="false">E-commerce</button>
+            <button type="button" class="chip" data-value="Application web" aria-pressed="false">Application web</button>
+            <button type="button" class="chip" data-value="Maintenance" aria-pressed="false">Maintenance</button>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="budget">Budget estimé (optionnel)</label>
+          <input id="budget" name="budget" class="input" placeholder="Ex : 2 000 €" maxlength="50">
+        </div>
+
+        <div class="field">
+          <label for="message">Votre projet</label>
+          <textarea id="message" name="message" class="input" required maxlength="2000" rows="6" placeholder="Parlez-moi de votre activité, de vos objectifs et de vos délais…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--lg btn--block">Envoyer la demande</button>
+        <p class="form__consent">Vos informations servent uniquement à répondre à votre demande. <a href="mentions-legales.html#donnees">En savoir plus</a></p>
+        <p class="form__note">Ou écrivez directement à <a href="mailto:contact@asborion.com">contact@asborion.com</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <strong class="logo logo--footer"><svg class="logo__star" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 3.84 L52.37 43.63 L75.38 48 L52.37 52.37 L48 92.16 L43.63 52.37 L20.62 48 L43.63 43.63 Z"/></svg><span class="logo__text">ASBORION</span></strong>
+          <p>Développeur web indépendant. Sites vitrines, e-commerce et applications sur mesure.</p>
+        </div>
+        <div class="site-footer__col">
+          <strong>Explorer</strong>
+          <a href="services.html">Services</a>
+          <a href="realisations.html">Réalisations</a>
+          <a href="contact.html">Contact</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <div class="site-footer__col">
+          <strong>Me contacter</strong>
+          <a href="mailto:contact@asborion.com">contact@asborion.com</a>
+        </div>
+      </div>
+      <p class="site-footer__copy">Copyright © <span data-year>2026</span> ASBORION. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
