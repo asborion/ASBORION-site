@@ -233,6 +233,20 @@ a { color: inherit; text-decoration: none; }
 .price { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.025em; }
 @media (min-width: 640px) { .service-card { padding: 3rem; } }
 
+.service-card__top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
+.badge {
+  display: inline-block; padding: 0.3rem 0.8rem; border-radius: 999px;
+  background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: 600; letter-spacing: 0;
+}
+.service-card--featured { box-shadow: inset 0 0 0 2px var(--primary), var(--shadow-soft); }
+.price-list { margin-top: 2rem; display: flex; flex-direction: column; }
+.price-list li {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--border);
+}
+.price-list li:last-child { border-bottom: 0; }
+.price-list__price { font-weight: 600; white-space: nowrap; }
+
 .included { border-top: 1px solid var(--border); padding-top: 3.5rem; }
 .included h2 { font-size: 1.875rem; text-align: center; margin-bottom: 2.5rem; }
 @media (min-width: 640px) { .included h2 { font-size: 2.25rem; } }
@@ -466,6 +480,9 @@ input[type="file"].input { padding: .6rem; }
 .review__author span { font-weight: 400; color: var(--muted); }
 .reviews__note { font-size: 0.875rem; margin-bottom: 0.5rem; }
 .currency-note { margin-top: 0.75rem; font-size: 0.9375rem; }
+.terms-note { margin-top: 2rem; text-align: center; font-size: 0.9375rem; }
+.terms-note a { color: var(--primary); }
+.terms-note a:hover { text-decoration: underline; }
 
 /* Logo en code : étoile + nom */
 .logo { gap: 0.5rem; color: var(--foreground); font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1; }
@@ -519,4 +536,10 @@ input[type="file"].input { padding: .6rem; }
 }
 @media (max-width: 767px) {
   .hero-film { border-radius: 1.25rem; clip-path: inset(0 round 1.25rem); }
+}
+
+/* Formule mise en avant */
+.service-card--featured:hover,
+.service-card--featured.reveal.is-visible:hover {
+  box-shadow: inset 0 0 0 2px var(--primary), var(--shadow-lift);
 }
