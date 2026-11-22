@@ -480,6 +480,9 @@ input[type="file"].input { padding: .6rem; }
 .review__author span { font-weight: 400; color: var(--muted); }
 .reviews__note { font-size: 0.875rem; margin-bottom: 0.5rem; }
 .currency-note { margin-top: 0.75rem; font-size: 0.9375rem; }
+.terms-note { margin-top: 2rem; text-align: center; font-size: 0.9375rem; }
+.terms-note a { color: var(--primary); }
+.terms-note a:hover { text-decoration: underline; }
 
 /* Logo en code : étoile + nom */
 .logo { gap: 0.5rem; color: var(--foreground); font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1; }
