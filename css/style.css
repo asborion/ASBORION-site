@@ -478,3 +478,45 @@ input[type="file"].input { padding: .6rem; }
 .site-footer a:hover { color: var(--night-foreground); }
 .logo--footer { display: inline-flex; justify-content: flex-start !important; align-self: flex-start; color: var(--night-foreground); font-size: 1.125rem; margin-bottom: 0.25rem; }
 .site-footer__grid, .site-footer__copy { border-color: rgba(255, 255, 255, 0.12); }
+
+/* ---------- Accueil : film d'introduction ASBORION ----------
+   Remplace l'image du laptop dans le hero. La vidéo garde son
+   fond noir ; le nom est une couche HTML (js/hero-film.js).
+   ------------------------------------------------------------ */
+.hero-film {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 2rem;
+  overflow: hidden;
+  clip-path: inset(0 round 2rem);   /* coins nets sur Safari avec la vidéo */
+  container-type: inline-size;
+  isolation: isolate;
+}
+.hero-film video,
+.hero-film canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.hero-film canvas { background: #000; pointer-events: none; }
+.hero-film.is-playing canvas { opacity: 0; }
+.hero-film__name {
+  position: absolute; left: 0; top: 83.333%;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: max(2.05cqw, 10px);
+  letter-spacing: 0.5em;
+  line-height: 1;
+  color: #F4EFE6;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-50%);
+  will-change: opacity, transform, filter;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 767px) {
+  .hero-film { border-radius: 1.25rem; clip-path: inset(0 round 1.25rem); }
+}

@@ -22,6 +22,7 @@
   <link rel="alternate" hreflang="fr" href="https://www.asborion.com/">
   <link rel="alternate" hreflang="en" href="https://www.asborion.com/en/">
   <link rel="alternate" hreflang="x-default" href="https://www.asborion.com/">
+  <link rel="preload" as="image" href="images/hero-film-poster.jpg">
 </head>
 <body>
   <header class="site-header">
@@ -50,8 +51,13 @@
           <a href="realisations.html" class="link">Voir les réalisations <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></a>
         </div>
       </div>
-      <div class="hero__image fade-up fade-up--delay">
-        <img src="images/hero-laptop.jpg" alt="Ordinateur portable sur un bureau blanc épuré" width="1600" height="1008">
+      <div class="hero__image hero__image--film fade-up fade-up--delay">
+        <div class="hero-film" data-hero-film data-src="videos/asborion-hero.mp4" data-src-sm="videos/asborion-hero-720.mp4" role="img" aria-label="Animation ASBORION : l'étoile s'ouvre sur un site présenté sur ordinateur, tablette et téléphone">
+          <video poster="images/hero-film-poster.jpg" muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1"><source src="videos/asborion-hero-720.mp4" type="video/mp4"></video>
+          <canvas width="1920" height="1080" aria-hidden="true"></canvas>
+          <span class="hero-film__name" aria-hidden="true">ASBORION</span>
+          <noscript><style>.hero-film canvas{display:none}</style></noscript>
+        </div>
       </div>
     </section>
 
@@ -239,5 +245,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/hero-film.js"></script>
 </body>
 </html>
